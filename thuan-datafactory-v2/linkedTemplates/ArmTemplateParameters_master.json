@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "thuan-datafactory-v2"
 		},
+		"DataLakeGen2_LinkedService_accountKey": {
+			"value": ""
+		},
+		"DataLakeGen2_LinkedService_properties_typeProperties_url": {
+			"value": "https://thuandatalakegen2.dfs.core.windows.net"
+		},
 		"containerUri": {
 			"value": ""
 		},
