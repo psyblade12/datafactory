@@ -25,12 +25,32 @@
 							"type": "BinaryReadSettings"
 						}
 					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "BinaryDataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"directoryName": "Data",
+							"fileName": "mynewfile.csv"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "BinaryDataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"directoryName": "Data2",
+							"fileName": "mynewfile2.csv"
+						}
 					}
 				]
 			}
