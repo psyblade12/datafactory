@@ -1,0 +1,33 @@
+{
+	"name": "BinaryDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataLakeGen2_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"directoryName": {
+				"type": "string"
+			},
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directoryName",
+					"type": "Expression"
+				},
+				"fileSystem": "thuandatalakecontainer"
+			}
+		}
+	}
+}
