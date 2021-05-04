@@ -29,5 +29,6 @@
 				"fileSystem": "thuandatalakecontainer"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }

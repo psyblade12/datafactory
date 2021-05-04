@@ -1,0 +1,9 @@
+{
+	"name": "thuan-datafactory-v2",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "af5bed2c-7900-44c6-8e08-a66abf5c8d0e",
+		"tenantId": "a6c4008c-1bbd-4990-aa2a-3cc13afe482b"
+	}
+}
